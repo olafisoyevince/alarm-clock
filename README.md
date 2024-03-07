@@ -1,24 +1,24 @@
 Here's a Markdown template you can use to describe your project and provide some basic instructions for users:
 
 ```markdown
-# Project Title
+# Alarm Clock 
 
 ## Description
 
-A JavaScript application for setting alarms based on user-defined times and displaying them. It updates the UI to indicate when an alarm is about to trigger and allows users to set alarms for specific times of the day.
+A JavaScript application for setting alarms based on user-defined times and displaying them. It updates the UI to indicate when an alarm is about to trigger and allows users to set alarms for specific times of the day. It also displays an attention-grabbing color before the alarm goes off. Aditionally, it changes color based on the time of day.
 
 ## Installation
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/olafisoyevince/alarm-clock.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd your-repository
+cd alarm-clock
 ```
 
 3. Open the `index.html` file in your web browser.
@@ -69,14 +69,8 @@ cd your-repository
 </html>
 ```
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Credits
 
-- Created by [Your Name](https://github.com/your-username)
+- Created by [Oluwaseun Olafisoye](https://github.com/olafisoye-vince)
 
 ```
-
-Replace placeholders like `your-username`, `your-repository`, and `Your Name` with appropriate values specific to your project. You can also modify or add more sections as needed.
