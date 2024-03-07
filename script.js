@@ -74,7 +74,8 @@ function updateClock() {
                 // Within 10 minutes before alarm
                 timeContainer.style.backgroundColor = "#ff0000";
                 timeContainer.style.color = "#fff";
-                timeContainer.style.padding = "0 20px"; // Attention-grabbing color
+                timeContainer.style.padding = "0 20px";
+                timeContainer.style.margin = " 0 0 20px 0"; // Attention-grabbing color
             } else {
                 timeContainer.style.backgroundColor = "";
                 timeContainer.style.color = "";
