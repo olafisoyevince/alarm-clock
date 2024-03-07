@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alarm Clock</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="alarm__wrapper">
+            <label for="ampmCheckbox">Show AM/PM</label>
+            <label class="switch">
+                <input type="checkbox" checked id="ampmCheckbox" />
+                <span class="slider round"></span>
+            </label>
+            <h1>00:00:00 PM</h1>
+
+            <div class="select__container">
+                <select>
+                    <option value="Hour" selected disabled hidden>Hour</option>
+                </select>
+
+                <select>
+                    <option value="Minute" selected disabled hidden>
+                        Minute
+                    </option>
+                </select>
+
+                <select>
+                    <option value="AM/PM" selected disabled hidden>
+                        AM/PM
+                    </option>
+                </select>
+            </div>
+
+            <button>Set Alarm</button>
+
+            <div id="alarms"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
