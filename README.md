@@ -10,9 +10,9 @@ A JavaScript application for setting alarms based on user-defined times and disp
 
 1. Clone the repository:
 
-   ```bash
-     git clone https://github.com/olafisoyevince/alarm-clock.git
-   
+```bash
+git clone https://github.com/olafisoyevince/alarm-clock.git
+```
 
 2. Navigate to the project directory:
 
