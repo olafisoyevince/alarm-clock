@@ -1,19 +1,18 @@
-Here's a Markdown template you can use to describe your project and provide some basic instructions for users:
 
-```markdown
 # Alarm Clock 
 
 ## Description
 
-A JavaScript application for setting alarms based on user-defined times and displaying them. It updates the UI to indicate when an alarm is about to trigger and allows users to set alarms for specific times of the day. It also displays an attention-grabbing color before the alarm goes off. Aditionally, it changes color based on the time of day.
+A JavaScript application for setting alarms based on user-defined times and displaying them. It updates the UI to indicate when an alarm is about to trigger and allows users to set alarms for specific times of the day. It also displays an attention-grabbing color before the alarm goes off. Additionally, it changes color based on the time of day.
+
 
 ## Installation
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/olafisoyevince/alarm-clock.git
-```
+   ```bash
+     git clone https://github.com/olafisoyevince/alarm-clock.git
+   
 
 2. Navigate to the project directory:
 
