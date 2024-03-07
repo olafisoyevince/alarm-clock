@@ -68,6 +68,8 @@ cd alarm-clock
 </html>
 ```
 
+![image](https://github.com/olafisoyevince/alarm-clock/assets/86838623/4edb23f8-32b7-433d-8f00-7602d80a2ded)
+
 ## Credits
 
 - Created by [Oluwaseun Olafisoye](https://github.com/olafisoye-vince)
