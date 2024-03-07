@@ -1,8 +1,12 @@
-const currentTime = document.querySelector("h1");
+const timeContainer = document.querySelector(".current__container");
+const currentTime = document.querySelector(".time");
+const amOrPm = document.querySelector(".am__pm");
+
 const selectMenu = document.querySelectorAll("select");
 const setAlarmButton = document.querySelector("button");
 const alarmsDisplay = document.getElementById("alarms");
 const ampmCheckbox = document.getElementById("ampmCheckbox");
+
 const body = document.body;
 
 let alarms = [];
@@ -13,9 +17,10 @@ function updateClock() {
     let minute = String(date.getMinutes()).padStart(2, "0"); // Pad minutes with leading zero if needed
     let seconds = String(date.getSeconds()).padStart(2, "0"); // Pad seconds with leading zero if needed
     let timeOfDay = date.getHours() >= 12 ? "PM" : "AM"; // Determine AM or PM
-    currentTime.innerText = `${hour}:${minute}:${seconds} ${
-        ampmCheckbox.checked ? timeOfDay : ""
-    }`;
+
+    currentTime.innerText = `${hour}:${minute}:${seconds} `;
+
+    amOrPm.innerText = `${ampmCheckbox.checked ? timeOfDay : ""}`;
 
     if (date.getHours() >= 7 && date.getHours() < 19) {
         // Daytime
@@ -67,12 +72,12 @@ function updateClock() {
 
             if (timeDifference > 0 && timeDifference <= 1) {
                 // Within 10 minutes before alarm
-                currentTime.style.backgroundColor = "#ff0000";
-                currentTime.style.color = "#fff";
-                currentTime.style.padding = "0 20px"; // Attention-grabbing color
+                timeContainer.style.backgroundColor = "#ff0000";
+                timeContainer.style.color = "#fff";
+                timeContainer.style.padding = "0 20px"; // Attention-grabbing color
             } else {
-                currentTime.style.backgroundColor = "";
-                currentTime.style.color = "";
+                timeContainer.style.backgroundColor = "";
+                timeContainer.style.color = "";
             }
         }
 

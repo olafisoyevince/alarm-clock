@@ -18,12 +18,79 @@ body {
     min-height: 100vh;
 }
 
-/* styling for the checkbox */
+.alarm__container {
+    width: 525px;
+}
+
+.current__container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+    height: 100px;
+}
+
+.current__container .time {
+    position: absolute;
+    left: 0;
+}
+
+.current__container span {
+    position: absolute;
+    right: 0;
+}
+
+.current__container .time,
+.current__container span {
+    font-family: "Clash Display", sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+    letter-spacing: 3px;
+    transition: all 1s ease;
+}
+
+select {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 15px 60px;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+}
+
+.select__container {
+    margin-bottom: 20px;
+}
+
+.alarms {
+    margin-top: 35px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* styling for the checkbox from  https://www.w3schools.com/howto/howto_css_switch.asp*/
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-bottom: 40px;
 }
 
 .switch input {
@@ -77,4 +144,39 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+    .alarm__container {
+        width: 270px !important;
+    }
+
+    .current__container {
+        height: 75px;
+    }
+
+    .current__container .time,
+    .current__container span {
+        font-size: 37px;
+        padding: 10px 0;
+        position: static;
+    }
+
+    select {
+        padding: 5px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .alarm__container {
+        width: 530px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .alarm__container {
+        width: 520px;
+    }
 }

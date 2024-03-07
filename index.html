@@ -6,40 +6,53 @@
         <title>Alarm Clock</title>
         <link rel="stylesheet" href="style.css" />
         <link
-            href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap"
+            href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&f[]=clash-display@700,500,600&display=swap"
             rel="stylesheet"
         />
     </head>
+
     <body>
         <div class="alarm__wrapper">
-            <label for="ampmCheckbox">Show AM/PM</label>
-            <label class="switch">
-                <input type="checkbox" checked id="ampmCheckbox" />
-                <span class="slider round"></span>
-            </label>
-            <h1>00:00:00 PM</h1>
+            <div class="alarm__container">
+                <div class="control">
+                    <label for="ampmCheckbox">Show AM/PM</label>
+                    <label class="switch">
+                        <input type="checkbox" checked id="ampmCheckbox" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
 
-            <div class="select__container">
-                <select>
-                    <option value="Hour" selected disabled hidden>Hour</option>
-                </select>
+                <div class="current__container">
+                    <h1 class="time">00:00:00</h1>
+                    <span class="am__pm" id="am-pm">PM</span>
+                </div>
 
-                <select>
-                    <option value="Minute" selected disabled hidden>
-                        Minute
-                    </option>
-                </select>
+                <div>
+                    <div class="select__container">
+                        <select>
+                            <option value="Hour" selected disabled hidden>
+                                Hour
+                            </option>
+                        </select>
 
-                <select>
-                    <option value="AM/PM" selected disabled hidden>
-                        AM/PM
-                    </option>
-                </select>
+                        <select>
+                            <option value="Minute" selected disabled hidden>
+                                Minute
+                            </option>
+                        </select>
+
+                        <select>
+                            <option value="AM/PM" selected disabled hidden>
+                                AM/PM
+                            </option>
+                        </select>
+                    </div>
+
+                    <button>Set Alarm</button>
+
+                    <div id="alarms" class="alarms"></div>
+                </div>
             </div>
-
-            <button>Set Alarm</button>
-
-            <div id="alarms"></div>
         </div>
 
         <script src="script.js"></script>
